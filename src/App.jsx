@@ -5,16 +5,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import Gallery from './Gallery';
 // import Contact from './Contact';
 // import NotFound from './NotFound';
+import Home from './Home';
 import Nav from './Nav';
-
 const App = () => {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/services" element={<Services />} /> */}
+        {/* <Route path="/gallery" element={<Gallery />} /> */}
+        {/* <Route path="/contact" element={<Contact />} /> */}
         {/* <Route path="/pruebas" element={<Contact />} /> */}
         <Route path="pruebas" element={<Nav />} />
       </Routes>
